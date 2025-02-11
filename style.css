@@ -1,0 +1,201 @@
+.londrina-outline-regular {
+    font-family: "Londrina Outline", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .meow-script-regular {
+    font-family: "Meow Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .staatliches-regular {
+    font-family: "Staatliches", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+/*  Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("back.png") no-repeat center center fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-family: "Londrina Outline", serif;
+    font-size: 125px;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+}
+
+nav ul li a {
+    font-family:"Staatliches", serif;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+/*  Header */
+header {font-family: "Londrina Outline", serif;
+    color: white;
+    background-color:#b144043d;
+    padding: 1px;
+    margin: 30px;
+    border: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#digital-clock {
+    font-family: "Staatliches", serif;
+    font-size: 100px;
+    color: white;
+    background-color: #e56340a4;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(1, 92, 87, 0.2);
+    border: 3px solid #045955;
+}
+
+/*  Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/*  About Me */
+#about {
+    font-family: "Londrina Outline", serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#about p {
+    font-family: "Meow Script", serif;
+    font-size: 25px;
+}
+
+#about-me {
+    background-color:#b144043d;
+    padding: 1px;
+    margin: 40px;
+    border: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    font-family: "Staatliches", serif;
+    line-height: 1.6;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+/*  Projects */
+#projects {
+    font-family: "Londrina Outline", serif;
+    background-color: #b144043d;
+    padding: 0;
+    margin: 20px;
+    border-radius: 10px
+}
+main {
+    flex: 1;
+}
+
+/*  Contact */
+
+#contact {
+    font-family: "Staatliches", serif;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #b144043d;
+    color: white; 
+    font-family: "Staatliches", serif;
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px auto; 
+    width: 300px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
+    cursor: pointer;
+}
+
+.contact-box p {
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.contact-box img {
+    max-width: 60px;
+    height: auto;
+}
+
+.contact-box a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+footer {
+    font-family:"Staatliches", serif;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    bottom: 0;
+}
