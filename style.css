@@ -1,20 +1,49 @@
+
 .londrina-outline-regular {
     font-family: "Londrina Outline", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  .meow-script-regular {
+}
+.meow-script-regular {
     font-family: "Meow Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.staatliches-regular {
+    font-family: "Staatliches", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.atma-light {
+    font-family: "Atma", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .atma-regular {
+    font-family: "Atma", serif;
     font-weight: 400;
     font-style: normal;
   }
   
-  .staatliches-regular {
-    font-family: "Staatliches", serif;
-    font-weight: 400;
+  .atma-medium {
+    font-family: "Atma", serif;
+    font-weight: 500;
     font-style: normal;
   }
-
+  
+  .atma-semibold {
+    font-family: "Atma", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .atma-bold {
+    font-family: "Atma", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 
 /*  Global Styles */
 html, body {
@@ -122,17 +151,50 @@ section {
     margin-bottom: 15px;
 }
 
-
 /*  Projects */
 #projects {
-    font-family: "Londrina Outline", serif;
-    background-color: #b144043d;
+    font-family: "Atma", serif;
+    font-weight: 300;
+    font-style: normal;
+    
     padding: 0;
     margin: 20px;
     border-radius: 10px
 }
 main {
-    flex: 1;
+    flex: 1;}
+
+    .project-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #b144043d;
+        color: white; 
+        font-family: "Atma", serif;
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        padding: 15px;
+        margin: 10px auto; 
+        width: 300px; 
+        border-radius: 10px; 
+        box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .project-box:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
+        cursor: pointer;
+    }
+    
+    .project-box p {
+        color: white;
+        font-weight: bold;
+        margin-top: 5px;
 }
 
 /*  Contact */
@@ -185,8 +247,6 @@ main {
     font-weight: bold;
     text-decoration: none;
 }
-
-
 
 
 footer {
