@@ -259,3 +259,9 @@ footer {
     border-radius: 10px;
     bottom: 0;
 }
+
+@media screen and (max-width: 480px) {
+    #connect-header {
+        font-size: 40px; /* Adjust for mobile phones */
+    }
+}
