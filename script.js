@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let pageTitle = document.title;
 
-    let headingText = "Welcome";
+    let headingText = "I'm so glad you're here!";
 
     if (pageTitle.includes("About")) {
         headingText = "Hi, I'm Des!";

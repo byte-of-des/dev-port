@@ -15,28 +15,7 @@
     <div id="header-container"></div>
 
     <main>
-        <section id="clock-container">
-            <div id="digital-clock">00:00:00</div>
-        </section>    
-        <script>
-            function updateClock() {
-                const now = new Date();
-                let hours = now.getHours();
-                let minutes = now.getMinutes();
-                let seconds = now.getSeconds();
-                
-                // Format time to always show two digits
-                hours = hours < 10 ? "0" + hours : hours;
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-                
-                document.getElementById("digital-clock").textContent = `${hours}:${minutes}:${seconds}`;
-            }
-            
-            // Update the clock every second
-            setInterval(updateClock, 1000);
-            updateClock(); // Initial call
-            </script>
+
                 
     </main>
     

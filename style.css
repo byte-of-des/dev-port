@@ -1,298 +1,240 @@
-
-.londrina-outline-regular {
-    font-family: "Londrina Outline", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.meow-script-regular {
-    font-family: "Meow Script", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.staatliches-regular {
-    font-family: "Staatliches", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.atma-light {
-    font-family: "Atma", serif;
-    font-weight: 300;
-    font-style: normal;
+/* 🎨 CSS Variables */
+:root {
+    --primary-font: "Londrina Outline", serif;
+    --primary-color: white;
+    --first-color: rgb(2, 99, 95);
+    --second-color: rgb(2, 99, 95);
   }
   
-  .atma-regular {
-    font-family: "Atma", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .atma-medium {
-    font-family: "Atma", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .atma-semibold {
-    font-family: "Atma", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .atma-bold {
-    font-family: "Atma", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-
-/*  Global Styles */
-html, body {
+  /* 🌍 Global Styles */
+  html, body {
+    background: url("back.png");
+    width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
-    background: url("back.png") no-repeat center center fixed;
-    color: white;
+    margin: 0;
     display: flex;
     flex-direction: column;
-}
-h1 {
-    font-size: 100px; 
+  }
+  
+  /* 🏷️ Header */
+  header {
     font-family: "Londrina Outline", serif;
     color: white;
-    text-align: center;
-    width: 100%;
-}
-
-nav { 
     background-color: #b144043d;
-    padding: 15px 0;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 15px;
-    margin: 30px; 
-    width: auto; 
-    border-radius: 10px; 
-}
-
-nav ul {
+  }
+  
+  /* 🎯 Page Titles */
+  h1 {
+    font-size: 100px;
+    font-family: "Londrina Outline", serif;
+    text-align: center;
+  }
+  
+  /* 📌 Navigation Bar */
+  nav { 
+    background-color: #b1430417;
+    text-align: center;
+    padding: none;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    gap: 30px; 
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
     padding: 0;
-    width: 100%;
-    
-}
-
-nav ul li {
-    display: inline-block;
+  }
+  
+  nav ul li {
     text-align: center;
-    margin: 0 75px;
-}
-
-nav ul li a {
-    font-family:"Staatliches", serif;
-    color: white;
+    margin: 0 50px;
+  }
+  
+  nav ul li a {
+    font-family: "Staatliches", serif;
+    color: rgba(3, 142, 166, 0.421);
     text-decoration: none;
     font-size: large;
-}
-/*  Header */
-header {
-    font-family: "Londrina Outline", serif;
-    color: white;
-    background-color:#b144043d;
-    padding: 1px;
-    margin: 30px;
-    border: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-}
-#header-container {
-    position: relative;
-}
+  }
 
-#clock-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#digital-clock {
-    font-family: "Staatliches", serif;
-    font-size: 100px;
-    color: white;
-    background-color: #e56340a4;
-    padding: 15px 30px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(1, 92, 87, 0.2);
-    border: 3px solid #045955;
-}
-
-/*  Sections */
-section {
+  
+  /* 📖 Sections */
+  section {
     padding: 40px;
     text-align: center;
-}
-
-/*  About Me */
-#about {
+  }
+  
+  /* 📝 About Me */
+  #about {
     font-family: "Londrina Outline", serif;
     font-size: 50px;
     text-align: center;
     padding: 50px;
     margin: 20px;
     border-radius: 10px;
-}
-#about p {
+  }
+  
+  #about p {
     font-family: "Meow Script", serif;
     font-size: 25px;
-}
-
-#about-me {
-    background-color:#b144043d;
-    padding: 1px;
+  }
+  
+  #about-me {
+    background-color: #b144043d;
+    padding: 10px;
     margin: 40px;
-    border: 10px;
     border-radius: 10px;
     text-align: center;
-}
-
-.about-container {
+  }
+  
+  .about-container {
     max-width: 800px;
     margin: auto;
     font-family: "Staatliches", serif;
     line-height: 1.6;
-}
-
-.about-container h1 {
+  }
+  
+  .about-container h1 {
     font-size: 36px;
     margin-bottom: 20px;
-}
-
-.about-container p {
+  }
+  
+  .about-container p {
+    color: white;
     font-size: 18px;
     margin-bottom: 15px;
-}
-
-/*  Projects */
-#projects {
+  }
+  
+  /* 🏗️ Projects */
+  #projects {
     font-family: "Atma", serif;
     font-weight: 300;
-    font-style: normal;
-    
-    padding: 0;
+    padding: 20px;
     margin: 20px;
-    border-radius: 10px
-}
-main {
-    flex: 1;}
-
-    .project-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #b144043d;
-        color: white; 
-        font-family: "Atma", serif;
-        font-size: 30px;
-        font-weight: 300;
-        font-style: normal;
-        padding: 15px;
-        margin: 10px auto; 
-        width: 300px; 
-        border-radius: 10px; 
-        box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
-        text-decoration: none;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    
-    .project-box:hover {
-        transform: scale(1.05); /* Slight zoom on hover */
-        box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
-        cursor: pointer;
-    }
-    
-    .project-box p {
-        color: white;
-        font-weight: bold;
-        margin-top: 5px;
-}
-
-/*  Contact */
-
-#contact {
-    font-family: "Staatliches", serif;
-    color: white;
-    text-align: center;
-    font-size: smaller;
-}
-
-.contact-box {
+    border-radius: 10px;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* 📦 Project Box */
+  .project-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #b144043d;
-    color: white; 
-    font-family: "Staatliches", serif;
-    font-size: 20px;
+    color: white;
+    font-family: "Atma", serif;
+    font-size: 30px;
+    font-weight: 300;
     padding: 15px;
-    margin: 10px auto; 
-    width: 300px; 
-    border-radius: 10px; 
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contact-box:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
     cursor: pointer;
-}
-
-.contact-box p {
+  }
+  
+  .project-box p {
     color: white;
     font-weight: bold;
     margin-top: 5px;
-}
-
-.contact-box img {
+  }
+  
+  /* ✉️ Contact Section */
+  #contact {
+    font-family: "Staatliches", serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #b144043d;
+    color: white;
+    font-family: "Staatliches", serif;
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
+    cursor: pointer;
+  }
+  
+  .contact-box p {
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .contact-box img {
     max-width: 60px;
     height: auto;
-}
-
-.contact-box a {
+  }
+  
+  .contact-box a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-}
-
-footer {
-    font-family:"Staatliches", serif;
+  }
+  
+  /* 📌 Footer */
+  footer {
+    font-family: "Staatliches", serif;
     color: white;
     text-align: center;
     font-size: smaller;
-    padding: 0px;
-    margin: 0px;
+    padding: 10px;
     border-radius: 10px;
-    bottom: 0;
-}
-
-@media screen and (max-width: 480px) {
-    #connect-header {
-        font-size: 40px; /* Adjust for mobile phones */
+  }
+  
+  /* 📱 Responsive Fixes */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 40px;
     }
     nav ul {
-        flex-direction: column; /* Stack the nav items */
-        gap: 10px;
+      flex-direction: column;
+      gap: 10px;
     }
-}
+    .contact-box, .project-box {
+      width: 90%;
+    }
+
+  }
+  
