@@ -11,23 +11,29 @@ document.addEventListener("DOMContentLoaded", function () {
         headingText = "Let's Connect";
     }
 
+    // Insert the navigation bar separately
+    document.getElementById("nav-container").innerHTML = `
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    `;
+
+    // Insert the header title separately
     document.getElementById("header-container").innerHTML = `
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
             <h1>${headingText}</h1>
         </header>
     `;
+});
+
 
     document.getElementById("footer-container").innerHTML = `
     <footer>
         <p>© 2025 Des | All Rights Reserved</p>
     </footer>
 `;
-});

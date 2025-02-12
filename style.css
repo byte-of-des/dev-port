@@ -56,19 +56,37 @@ html, body {
     flex-direction: column;
 }
 h1 {
+    font-size: 100px; 
     font-family: "Londrina Outline", serif;
-    font-size: 125px;
     color: white;
+    text-align: center;
+    width: 100%;
 }
+
+nav { 
+    background-color: #b144043d;
+    padding: 15px 0;
+    text-align: center;
+    padding: 15px;
+    margin: 30px; 
+    width: auto; 
+    border-radius: 10px; 
+}
+
 nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
     list-style: none;
     padding: 0;
+    width: 100%;
     
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 75px;
 }
 
 nav ul li a {
@@ -78,15 +96,25 @@ nav ul li a {
     font-size: large;
 }
 /*  Header */
-header {font-family: "Londrina Outline", serif;
+header {
+    font-family: "Londrina Outline", serif;
     color: white;
     background-color:#b144043d;
     padding: 1px;
     margin: 30px;
     border: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    height: auto;
 }
+#header-container {
+    position: relative;
+}
+
 #clock-container {
     display: flex;
     justify-content: center;
@@ -248,7 +276,6 @@ main {
     text-decoration: none;
 }
 
-
 footer {
     font-family:"Staatliches", serif;
     color: white;
@@ -263,5 +290,9 @@ footer {
 @media screen and (max-width: 480px) {
     #connect-header {
         font-size: 40px; /* Adjust for mobile phones */
+    }
+    nav ul {
+        flex-direction: column; /* Stack the nav items */
+        gap: 10px;
     }
 }
