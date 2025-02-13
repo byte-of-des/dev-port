@@ -64,7 +64,7 @@ nav ul {
 
 nav ul li {
     text-align: center;
-    margin: 0 5%;
+    margin: 0 3%;
 }
 
 nav ul li a {
@@ -73,7 +73,25 @@ nav ul li a {
     text-decoration: none;
     font-size: large;
 }
+.gif-container {
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrolling issues */
+}
 
+.gif-container img {
+  width: 50%;
+  height: 50%;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain; /* Ensures it scales properly */
+}
 /* 📖 Sections */
 section {
     padding: 40px;
@@ -253,7 +271,9 @@ footer {
         gap: 10px;
     }
     
-    .contact-box, .project-box {
+    .contact-box, .project-box, {
         width: 95%;
     }
+    
+    
 }
