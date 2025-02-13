@@ -4,10 +4,10 @@
     --primary-color: white;
     --first-color: rgb(2, 99, 95);
     --second-color: rgb(2, 99, 95);
-  }
-  
-  /* 🌍 Global Styles */
-  html, body {
+}
+
+/* 🌍 Global Styles */
+html, body {
     background: url("back.png");
     width: 100%;
     height: 100%;
@@ -15,32 +15,33 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-  }
-  
-  /* 🏷️ Header */
-  header {
+}
+
+/* 🏷️ Header */
+header {
     font-family: "Londrina Outline", serif;
     color: white;
     background-color: #b144043d;
     padding: 10px;
-    margin: 30px;
+    margin: 2%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-  
-  /* 🎯 Page Titles */
-  h1 {
+    max-width: 90%;
+}
+
+/* 🎯 Page Titles */
+h1 {
     font-size: 100px;
     font-family: "Londrina Outline", serif;
     text-align: center;
-  }
-  
-  /* 📌 Navigation Bar */
-  nav { 
+}
+
+/* 📌 Navigation Bar */
+nav { 
     background-color: #b1430417;
     text-align: center;
     padding: none;
@@ -48,91 +49,96 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  nav ul {
+    max-width: 100%;
+}
+
+nav ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3%;
     list-style: none;
     padding: 0;
-  }
-  
-  nav ul li {
+    width: 100%;
+    max-width: 90%;
+}
+
+nav ul li {
     text-align: center;
-    margin: 0 50px;
-  }
-  
-  nav ul li a {
+    margin: 0 5%;
+}
+
+nav ul li a {
     font-family: "Staatliches", serif;
     color: rgba(3, 142, 166, 0.421);
     text-decoration: none;
     font-size: large;
-  }
+}
 
-  
-  /* 📖 Sections */
-  section {
+/* 📖 Sections */
+section {
     padding: 40px;
     text-align: center;
-  }
-  
-  /* 📝 About Me */
-  #about {
+}
+
+/* 📝 About Me */
+#about {
     font-family: "Londrina Outline", serif;
     font-size: 50px;
     text-align: center;
     padding: 50px;
-    margin: 20px;
+    margin: 2%;
     border-radius: 10px;
-  }
-  
-  #about p {
+    max-width: 90%;
+}
+
+#about p {
     font-family: "Meow Script", serif;
     font-size: 25px;
-  }
-  
-  #about-me {
+}
+
+#about-me {
     background-color: #b144043d;
     padding: 10px;
-    margin: 40px;
+    margin: 2%;
     border-radius: 10px;
     text-align: center;
-  }
-  
-  .about-container {
-    max-width: 800px;
+    max-width: 90%;
+}
+
+.about-container {
+    max-width: 80%;
     margin: auto;
     font-family: "Staatliches", serif;
     line-height: 1.6;
-  }
-  
-  .about-container h1 {
+}
+
+.about-container h1 {
     font-size: 36px;
     margin-bottom: 20px;
-  }
-  
-  .about-container p {
+}
+
+.about-container p {
     color: white;
     font-size: 18px;
     margin-bottom: 15px;
-  }
-  
-  /* 🏗️ Projects */
-  #projects {
+}
+
+/* 🏗️ Projects */
+#projects {
     font-family: "Atma", serif;
     font-weight: 300;
     padding: 20px;
-    margin: 20px;
+    margin: 2%;
     border-radius: 10px;
-  }
-  
-  main {
+    max-width: 90%;
+}
+
+main {
     flex: 1;
-  }
-  
-  /* 📦 Project Box */
-  .project-box {
+}
+
+/* 📦 Project Box */
+.project-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,33 +151,34 @@
     font-weight: 300;
     padding: 15px;
     margin: 10px auto;
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .project-box:hover {
+}
+
+.project-box:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
     cursor: pointer;
-  }
-  
-  .project-box p {
+}
+
+.project-box p {
     color: white;
     font-weight: bold;
     margin-top: 5px;
-  }
-  
-  /* ✉️ Contact Section */
-  #contact {
+}
+
+/* ✉️ Contact Section */
+#contact {
     font-family: "Staatliches", serif;
     color: white;
     text-align: center;
-  }
-  
-  .contact-box {
+}
+
+.contact-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,58 +190,70 @@
     font-size: 20px;
     padding: 15px;
     margin: 10px auto;
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .contact-box:hover {
+}
+
+.contact-box:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(1, 87, 93, 0.6);
     cursor: pointer;
-  }
-  
-  .contact-box p {
+}
+
+.contact-box p {
     color: white;
     font-weight: bold;
     margin-top: 5px;
-  }
-  
-  .contact-box img {
+}
+
+.contact-box img {
     max-width: 60px;
     height: auto;
-  }
-  
-  .contact-box a {
+}
+
+.contact-box a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-  }
-  
-  /* 📌 Footer */
-  footer {
+}
+
+/* 📌 Footer */
+footer {
     font-family: "Staatliches", serif;
     color: white;
     text-align: center;
     font-size: smaller;
     padding: 10px;
     border-radius: 10px;
-  }
-  
-  /* 📱 Responsive Fixes */
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 40px;
-    }
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-    .contact-box, .project-box {
-      width: 90%;
-    }
+    max-width: 100%;
+}
 
-  }
-  
+/* 📱 Responsive Fixes */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    
+    .contact-box, .project-box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-box, .project-box {
+        width: 95%;
+    }
+}
