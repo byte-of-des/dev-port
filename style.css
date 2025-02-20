@@ -167,13 +167,12 @@ main {
     font-family: "Atma", serif;
     font-size: 30px;
     font-weight: 300;
-    padding: 15px;
+    padding: 10px;
     margin: 10px auto;
     width: 80%;
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(1, 87, 93, 0.453);
-    text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -188,6 +187,15 @@ main {
     font-weight: bold;
     margin-top: 5px;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: cadetblue;
+}
+
 
 /* ✉️ Contact Section */
 #contact {

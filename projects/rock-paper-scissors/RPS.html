@@ -24,19 +24,29 @@
     
       img:hover {
         transform: scale(1.1);
-        border-color: blue;
+        border-color: whitesmoke;
       }
 
       h1 {
         margin-bottom: 20px;
       }
+      
+      .rps-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Space between images */
+        }
+
+      
     </style>
     
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
 
-    <img src="Rock.png" alt="Rock" width="300" height="150" onclick="
+    <div class="rps-container">
+       <img src="rock.png" alt="Rock" width="300" height="150" onclick="
       const randomNumber = Math.random();
       let computerMove = '';
 
@@ -61,7 +71,7 @@
       alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
     ">
 
-    <img src="Paper.png" alt="Paper" width="300" height="150" onclick="
+    <img src="paper.png" alt="Paper" width="300" height="150" onclick="
       const randomNumber = Math.random();
       let computerMove = '';
 
@@ -86,7 +96,7 @@
       alert(`You picked Paper. Computer picked ${computerMove}. ${result}`);
     ">
 
-    <img src="Scissors.png" alt="Scissors" width="300" height="150" onclick="
+    <img src="scissors.png" alt="Scissors" width="300" height="150" onclick="
       const randomNumber = Math.random();
       let computerMove = '';
 
@@ -110,7 +120,7 @@
 
       alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`);
     ">
-
+    </div>
     <script>
     </script>
   </body>
