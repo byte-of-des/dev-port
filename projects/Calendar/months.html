@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Multi-Month Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Fixed navigation bar */
+    header {
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    /* Main container to push content below nav */
+    .container {
+      padding-top: 60px; /* Adjust to header height */
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin: 50px 0;
+    }
+    section h2 {
+      text-align: center;
+    }
+    /* Calendar grid styling */
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      margin-top: 10px;
+    }
+    .day, .day-name {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .day:hover {
+      background-color: #f0f0f0;
+    }
+    .active {
+      background-color: #add8e6;
+    }
+    .day-name {
+      font-weight: bold;
+      background-color: #eee;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#march">March</a>
+      <a href="#april">April</a>
+      <a href="#may">May</a>
+      <a href="#june">June</a>
+      <a href="#july">July</a>
+      <a href="#august">August</a>
+      <a href="#september">September</a>
+      <a href="#october">October</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Calendar sections for each month -->
+    <section id="march">
+      <h2>March 2025</h2>
+      <div class="calendar" data-month="2" data-year="2025"></div>
+    </section>
+    <section id="april">
+      <h2>April 2025</h2>
+      <div class="calendar" data-month="3" data-year="2025"></div>
+    </section>
+    <section id="may">
+      <h2>May 2025</h2>
+      <div class="calendar" data-month="4" data-year="2025"></div>
+    </section>
+    <section id="june">
+      <h2>June 2025</h2>
+      <div class="calendar" data-month="5" data-year="2025"></div>
+    </section>
+    <section id="july">
+      <h2>July 2025</h2>
+      <div class="calendar" data-month="6" data-year="2025"></div>
+    </section>
+    <section id="august">
+      <h2>August 2025</h2>
+      <div class="calendar" data-month="7" data-year="2025"></div>
+    </section>
+    <section id="september">
+      <h2>September 2025</h2>
+      <div class="calendar" data-month="8" data-year="2025"></div>
+    </section>
+    <section id="october">
+      <h2>October 2025</h2>
+      <div class="calendar" data-month="9" data-year="2025"></div>
+    </section>
+  </div>
+
+  <script>
+    // Function to generate a calendar in a specified container for a given month and year.
+    function generateCalendar(container, month, year) {
+      // Clear any previous content
+      container.innerHTML = '';
+
+      // Create header row with day names (Sunday to Saturday)
+      const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      dayNames.forEach(day => {
+        const dayNameCell = document.createElement('div');
+        dayNameCell.classList.add('day-name');
+        dayNameCell.textContent = day;
+        container.appendChild(dayNameCell);
+      });
+
+      // Determine the starting day of the month and number of days in the month
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      // Add blank cells for days before the first day of the month
+      for (let i = 0; i < firstDay; i++) {
+        const blankCell = document.createElement('div');
+        blankCell.classList.add('day');
+        blankCell.style.visibility = 'hidden';
+        container.appendChild(blankCell);
+      }
+
+      // Create day cells for each day of the month
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayCell = document.createElement('div');
+        dayCell.classList.add('day');
+        dayCell.textContent = day;
+        // Toggle active state when clicking on a day
+        dayCell.addEventListener('click', function() {
+          this.classList.toggle('active');
+        });
+        container.appendChild(dayCell);
+      }
+    }
+
+    // Loop through each calendar container and generate the calendar
+    document.querySelectorAll('.calendar').forEach(container => {
+      const month = parseInt(container.getAttribute('data-month'));
+      const year = parseInt(container.getAttribute('data-year'));
+      generateCalendar(container, month, year);
+    });
+  </script>
+</body>
+</html>
