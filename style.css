@@ -1,4 +1,3 @@
-/* 🎨 CSS Variables */
 :root {
     --primary-font: "Londrina Outline", serif;
     --primary-color: white;
@@ -6,7 +5,6 @@
     --second-color: rgb(2, 99, 95);
 }
 
-/* 🌍 Global Styles */
 html, body {
     background: url("back.png");
     width: 100%;
@@ -17,7 +15,6 @@ html, body {
     flex-direction: column;
 }
 
-/* 🏷️ Header */
 header {
     font-family: "Londrina Outline", serif;
     color: white;
@@ -33,18 +30,15 @@ header {
     max-width: 90%;
 }
 
-/* 🎯 Page Titles */
 h1 {
     font-size: 100px;
     font-family: "Londrina Outline", serif;
     text-align: center;
 }
 
-/* 📌 Navigation Bar */
-nav { 
+nav {
     background-color: #b1430417;
     text-align: center;
-    padding: none;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -73,32 +67,32 @@ nav ul li a {
     text-decoration: none;
     font-size: large;
 }
+
 .gif-container {
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; /* Prevents scrolling issues */
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .gif-container img {
-  width: 50%;
-  height: 50%;
-  max-width: 100vw;
-  max-height: 100vh;
-  object-fit: contain; /* Ensures it scales properly */
+    width: 50%;
+    height: 50%;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
 }
-/* 📖 Sections */
+
 section {
     padding: 40px;
     text-align: center;
 }
 
-/* 📝 About Me */
 #about {
     font-family: "Londrina Outline", serif;
     font-size: 50px;
@@ -141,7 +135,6 @@ section {
     margin-bottom: 15px;
 }
 
-/* 🏗️ Projects */
 #projects {
     font-family: "Atma", serif;
     font-weight: 300;
@@ -155,7 +148,6 @@ main {
     flex: 1;
 }
 
-/* 📦 Project Box */
 .project-box {
     display: flex;
     flex-direction: column;
@@ -196,8 +188,6 @@ a:visited {
     text-decoration: cadetblue;
 }
 
-
-/* ✉️ Contact Section */
 #contact {
     font-family: "Staatliches", serif;
     color: white;
@@ -247,7 +237,6 @@ a:visited {
     text-decoration: none;
 }
 
-/* 📌 Footer */
 footer {
     font-family: "Staatliches", serif;
     color: white;
@@ -258,7 +247,6 @@ footer {
     max-width: 100%;
 }
 
-/* 📱 Responsive Fixes */
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 60px;
@@ -279,9 +267,7 @@ footer {
         gap: 10px;
     }
     
-    .contact-box, .project-box, {
+    .contact-box, .project-box {
         width: 95%;
     }
-    
-    
 }
